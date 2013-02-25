@@ -3,10 +3,10 @@
 ## Background: Today's Workflow
 
 It's been exciting to see the BlueButton+ Push implementation guide come
-together -- and gratifying to see trust bundles being used to bootstrap circles
+together, and gratifying to see trust bundles being used to bootstrap circles
 of trust within the BlueButton+ Direct community.  Now that so much
 infrastructure is in place, it's time to think carefully about the
-patient-facing workflows that we'll need in order to connect apps to data
+**patient-facing workflows** that we'll need in order to connect apps to data
 **simply and safely**.
 
 ### Example:  Getting BP readings to a "BP Grapher" app
@@ -24,14 +24,15 @@ for each of her data providers; she needs to log in, locate the BB Connection
 feature (which will differ from portal to portal), and type or copy/paste
 the appropriate (app-specific) Direct address in the authorization form.
 
-This process requires many steps, is error prone, and in the end provides
-no explicit notification to the app that a connection has been established. 
+This process requires **many steps**, is **error prone**, and in the end provides
+**no explicit notification** to the app that a connection has been established. 
+
 It's a start -- but we can do better!
 
 ## Proposal: Simpler Redirection-Based Workflow
 We can streamline this process to make it more consistent and easier for
-patients.  The following is a strawman proposal for how a streamlined system
-might work -- it's designed to provoke comments and feedback!  (Also, please
+patients.  The following is a **strawman proposal** for how a streamlined system
+might work -- it's designed to **provoke comments and feedback**!  (Also, please
 note that BIDMC and SFGH are used purely for illustrative purposes in this
 mockup scenario.)
 
@@ -82,13 +83,13 @@ to expose a single HTTP endpoint at a published URL.**
 
 For this example, we'll call that URL `/create-bb-connection`.  
 
-The endpoint takes three parameters:
+#### The endpoint takes three parameters:
 
  * `sendMailTo`: Direct address to which a connection is being requested
  * `redirectTo`: HTTPS URL to return the patient to after a connection is created/rejected
  * `state`:  (optional) app-supplied string that will be returned to the app along with the patient's decision
 
-The job of this endpoint is to:
+#### The job of this endpoint is to:
 
 1.  Ensure the patient is logged in
 2.  Present the patient with a pre-filled authorization form asking to create a connection to the address found in `sendMailTo`
