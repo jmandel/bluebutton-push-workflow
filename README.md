@@ -17,7 +17,7 @@ that the process will look something like this:
 * Patient visits https://bp-grapher.com and registers for an account.
 * BP Grapher presents the patient with a screen something like:
 
-[Current BB+ Push Workflow](mockup/01-current-workflow.png)
+![Current BB+ Push Workflow](mockup/01-current-workflow.png)
 
 In other words: to connect the app, the patient needs to know the portal URL 
 for each of her data providers; she needs to log in, locate the BB Connection
@@ -38,7 +38,7 @@ mockup scenario.)
 
 ### Step 1: Choose a Provider
 
-[Proposed Workflow Step 1: Choose a Provider](mockup/02-improved-workflow.png)
+![Proposed Workflow Step 1: Choose a Provider](mockup/02-improved-workflow.png)
 
 If BP Grapher can learn about which data holders support BlueButton+ Push,
 it can present the patient with a simple "find my provider" search box. 
@@ -52,7 +52,7 @@ URL within the provider's portal.  She sees...
 
 ### Step 2: Create a BB+ Connection
 
-[Proposed Workflow Step 2: Create a BB+ Connection](mockup/03-improved-workflow.png)
+![Proposed Workflow Step 2: Create a BB+ Connection](mockup/03-improved-workflow.png)
 
 In this example, the patient is redirected to an authorization screen within
 her provider's portal.  (Note: she's probably presented with a login screen
@@ -69,7 +69,7 @@ which learns about her decision.
 
 ### Step 3: Done!  (Or connect to more providers as needed.)
 
-[Proposed Workflow Step 2: Create a BB+ Connection](mockup/04-improved-workflow.png)
+![Proposed Workflow Step 2: Create a BB+ Connection](mockup/04-improved-workflow.png)
 
 At this point, the patient is back at BP Grapher's site.  She can begin to see
 her blood pressure data as soon as the provider sends it over to the app.  And
