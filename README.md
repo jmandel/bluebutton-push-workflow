@@ -1,3 +1,8 @@
+# This work has been supplanted!
+# [https://github.com/blue-button/blue-button-plus-pull](https://github.com/blue-button/blue-button-plus-pull)
+
+---
+
 # BlueButton+ Push: Simplifying Patient Workflows
 
 ## Background: Today's Workflow
